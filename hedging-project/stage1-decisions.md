@@ -50,5 +50,5 @@ To determine the optimal path forward, we will execute the following sequence:
 
 ---
 
-**References**
-Eun, C., Resnick, B., & Chuluun, T. (2024). *International Financial Management* (10th ed.). McGraw-Hill Education. 
+**References**    
+  Eun, C., Resnick, B., & Chuluun, T. (2024). *International Financial Management* (10th ed.). McGraw-Hill Education. 
