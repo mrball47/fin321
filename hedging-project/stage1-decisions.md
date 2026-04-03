@@ -21,13 +21,13 @@ Over a 1-year horizon, the EUR/USD exchange rate is susceptible to macroeconomic
 Securing such risk will accomplish the following objectives:
   * Protect the USD value of this receivable against adverse currency movements. 
   * Balance our downside protection with heding costs (minimizing upfront cash requirements in option premiums, or avoiding unnecessary strain the firm's balance sheets and credit lines).
-  * Establish a repeatable framework for evaluating future international receivables and mitigating FX risk across the firm.
+  * Establish a framework for evaluating future international receivables and mitigating FX risk across the firm.
 
 To mitigate this currency risk, we are evaluating three hedging strategies:
 
-* **Forward Contracts:** Lock in a guaranteed exchange rate today (the 1-year forward rate is currently quoted at 1.0935).
+* **Forward Contracts:** Lock in a guaranteed exchange rate today (currently quoted at 1.0935).
 
-  * **Pros:** Provides 100% certainty for future USD cash flows with zero upfront cash cost. 
+  * **Pros:** Provides complete certainty for future USD cash flows with zero upfront cash cost. 
   * **Cons:** Eliminates any upside profit potential if the Euro appreciates.
 
 * **Options Contracts:** Purchase a put option on the Euro, granting us the right to sell them at a fixed strike rate.
@@ -40,13 +40,13 @@ To mitigate this currency risk, we are evaluating three hedging strategies:
   * **Pros:** Locks in a known USD value today and provides immediate liquidity for operations.
   * **Cons:** Consumes existing balance sheet capacity and ties up corporate credit lines.
 
-To determine the optimal path forward, we will execute the following sequence:
+To determine the optimal solution, we will execute the following sequence:
 
-  **1. Excel Model Build:** Build a working spreadsheet computing forward, option, and money market hedge outcomes under various sensitivities in EUR/USD (±5%).
+  **1. Excel Model Build:** Build a working spreadsheet computing forward, options, and money market hedge outcomes under various sensitivities in EUR/USD (±5%).
 
   **2. Technical Specifications:** Document the model's development, and design a framework precise enough for an another analyst of AI to reconstruct for other international receivables. 
 
-  **3. Final Analysis & AI Prompt:** Interpret our results, and write a structured AI prompt to regenerate our model and deliver an executive-ready recommendation.
+  **3. Final Analysis & AI Prompt:** Interpret our results, and write a structured AI prompt to regenerate our model and deliver executive-ready recommendations.
 
 ---
 
