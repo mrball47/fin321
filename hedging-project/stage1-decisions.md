@@ -23,7 +23,7 @@ Securing such risk will accomplish the following objectives:
   * Balance downside protection with hedging costs (minimizing upfront cash requirements and option premiums, or avoiding unnecessary strain the firm's balance sheets and credit lines).
   * Establish a framework for evaluating future international receivables and mitigating currency risk across the firm.
 
-We are currently evaluating three hedging strategies:
+We are currently evaluating three strategies:
 
 * **Forward Contracts:** Lock in a guaranteed exchange rate today (currently quoted at 1.0935).
 
