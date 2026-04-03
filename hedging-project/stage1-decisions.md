@@ -19,15 +19,15 @@ This memo outlines a risk management methodology for our Euro-denominated receiv
 Over a 1-year horizon, the EUR/USD exchange rate is susceptible to macroeconomic volatility driven by changes in central bank interest rates, shifting inflation data, and geopolitical uncertainty. If the Euro weakens before the settlement date, the converted USD equivalent of our revenue will decline. 
 
 Securing such risk will accomplish the following objectives:
-  * Protect the USD value of this receivable against adverse currency movements. 
-  * Balance our downside protection with heding costs (minimizing upfront cash requirements in option premiums, or avoiding unnecessary strain the firm's balance sheets and credit lines).
-  * Establish a framework for evaluating future international receivables and mitigating FX risk across the firm.
+  * Protect the receivable's USD value against adverse currency movements. 
+  * Balance downside protection with hedging costs (minimizing upfront cash requirements and option premiums, or avoiding unnecessary strain the firm's balance sheets and credit lines).
+  * Establish a framework for evaluating future international receivables and mitigating currency risk across the firm.
 
 We are currently evaluating three hedging strategies:
 
 * **Forward Contracts:** Lock in a guaranteed exchange rate today (currently quoted at 1.0935).
 
-  * **Pros:** Provides complete certainty for future USD cash flows with zero upfront cash cost. 
+  * **Pros:** Provides complete certainty for future USD cash flows with no upfront premiums. 
   * **Cons:** Eliminates any upside profit potential if the Euro appreciates.
 
 * **Options Contracts:** Purchase a put option on the Euro, granting us the right to sell them at a fixed strike rate.
