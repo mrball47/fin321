@@ -14,13 +14,14 @@
 
 ---  
   
-This memo outlines a risk management strategy for our upcoming Euro-denominated receivable, valued at a $20,000,000 USD baseline, due in one year. Because our functional currency is the US Dollar, this unhedged cash flow exposes our projected revenue directly to EUR/USD exchange rate volatility. The primary objective is to evaluate and implement a hedging strategy that protects our profit margins against potential Euro depreciation. We will analyze three core approaches: Forward Contracts, Money Market Hedges, and Options. Expected outcomes include a fully functional financial model to compare these scenarios and a final, data-driven recommendation to secure our USD revenue targets.
+This memo outlines a risk management strategy for our Euro-denominated receivable, valued at a $20,000,000 USD baseline, due in one year. Because our functional currency is the US Dollar, this unhedged cash flow exposes our projected revenue to volatility in the EUR/USD exchange rate. To manage this risk, we will be analyzing various hedging strategies for the receivable, modeling such strategies under various levels of volatility, and using AI to reconstruct our model and provide recommendations for the firm.
 
-Our firm is scheduled to receive a significant Euro-denominated payment in exactly 12 months. Currently, this incoming cash flow is entirely unhedged. The core problem is that a depreciation of the Euro against the US Dollar before the settlement date would directly reduce our realized USD proceeds. Left unmanaged, this FX exposure threatens to compress project profit margins and compromise our baseline revenue target. 
+Over a 1-year horizon, the EUR/USD exchange rate is highly susceptible to macroeconomic volatility driven by changes in central bank interest rate divergences, shifting inflation data, and geopolitical uncertainty. If the Euro weakens before the settlement date, the converted USD equivalent of our revenue will decline. 
 
-* **Primary Objective:** Protect the USD value of this receivable against adverse currency movements.
-
-* **Secondary Objective:** Establish a repeatable framework for evaluating future international receivables and mitigating FX risk across the firm.
+Objectives:
+  * Protect the USD value of this receivable against adverse currency movements. 
+  * Balancing the level of downside protection against the operational costs of the hedge (minimizing upfront cash requirements in option premiums, or avoiding unnecessary strain the firm's balance sheets and credit lines).
+  * Establish a repeatable framework for evaluating future international receivables and mitigating FX risk across the firm.
 
 To mitigate this currency risk, we are evaluating three distinct hedging methodologies:
 
