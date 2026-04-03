@@ -18,7 +18,7 @@ This memo outlines a risk management strategy for our Euro-denominated receivabl
 
 Over a 1-year horizon, the EUR/USD exchange rate is highly susceptible to macroeconomic volatility driven by changes in central bank interest rate divergences, shifting inflation data, and geopolitical uncertainty. If the Euro weakens before the settlement date, the converted USD equivalent of our revenue will decline. 
 
-Objectives:
+Securing such risk will accomplish the following objectives:
   * Protect the USD value of this receivable against adverse currency movements. 
   * Balancing the level of downside protection against the operational costs of the hedge (minimizing upfront cash requirements in option premiums, or avoiding unnecessary strain the firm's balance sheets and credit lines).
   * Establish a repeatable framework for evaluating future international receivables and mitigating FX risk across the firm.
