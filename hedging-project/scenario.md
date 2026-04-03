@@ -1,6 +1,6 @@
-# Scenario 4 – EUR Receivables (USD Base, 1-Year Horizon)
+# Scenario 4 – U.S. Aerospace Manufacturer 
 
-### Scenario 4 – U.S. Aerospace Manufacturer
+### (USD Base, 1-Year Horizon)
 
 * **Receivable:** $20,000,000 receivable in 1 year
 * **Spot:** EURUSD quote
