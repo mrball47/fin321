@@ -18,10 +18,10 @@ This memo outlines a risk management methodology for our Euro-denominated receiv
 
 Over a 1-year horizon, the EUR/USD exchange rate is susceptible to macroeconomic volatility driven by changes in central bank interest rates, shifting inflation data, and geopolitical uncertainty. If the Euro weakens before the settlement date, the converted USD equivalent of our revenue will decline. 
 
-Securing such risk will accomplish the following objectives:
+Securing such risk will accomplish the following:
   * Protect the receivable's USD value against adverse currency movements. 
   * Balance downside protection with hedging costs (minimizing upfront cash requirements and premiums, or avoiding unnecessary strain the firm's balance sheets and credit lines).
-  * Establish a framework for evaluating future international receivables and mitigating currency risk across the firm.
+  * Establish a framework for evaluating future international receivables and mitigating currency risk.
 
 We are currently evaluating three strategies:
 
@@ -42,7 +42,7 @@ We are currently evaluating three strategies:
 
 To determine the optimal solution, we will execute the following sequence:
 
-  **1. Excel Model Build:** Build a working spreadsheet computing forward, options, and money market hedge outcomes under various sensitivities in EUR/USD (±5%).
+  **1. Excel Model Build:** Build a spreadsheet computing forward, options, and money market hedge outcomes under various sensitivities in EUR/USD (±5%).
 
   **2. Technical Specifications:** Document the model's development and design a framework precise enough for another analyst or AI to reconstruct for other international receivables. 
 
