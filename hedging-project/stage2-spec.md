@@ -7,8 +7,8 @@
 **Version:** 2.0    
 **LLM Used:** Gemini  
 
-**Role:** Financial Analyst / Treasury Analyst  
-**Audience:** CFO or Director of Treasury  
+**Role:** Financial Analyst  
+**Audience:** Chief Financial Officer  
 
 **Purpose:** Provide a professional, quantitative specification outlining the analytical structure for evaluating FX hedging alternatives.
 
