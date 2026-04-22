@@ -66,10 +66,10 @@ The hedging model accounts for the following:
 ## 4. Calculation Flow
 
 Forward Hedging: This strategy locks in the future domestic value of the receivable using a forward contract.  
-  1. 
+  1. q
 
 Money Market Hedging: This strategy uses current spot markets and money markets to synthetically lock in a future exchange rate.  
-  1. 
+  1. q
 
 > *Your goal: anyone reading this section should know exactly how to implement your logic in Excel or code — without you explaining formulas.*
 
