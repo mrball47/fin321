@@ -1,11 +1,11 @@
 # Receivable Hedging – Technical Specification
 
-**Created by:** [name]  
-**Updated by:** [name]  
-**Date Created:** [date]  
-**Date Updated:** [date]  
-**Version:** [0.0]
-**LLM Used:** [LLM name, or "None"]
+**Created by:** Michael Ballesteros  
+**Updated by:** Michael Ballesteros  
+**Date Created:** 4/21/26    
+**Date Updated:** 4/21/26      
+**Version:** [2.0]  
+**LLM Used:** Gemini  
 
 **Role:** Financial Analyst / Treasury Analyst  
 **Audience:** CFO or Director of Treasury  
