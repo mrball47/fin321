@@ -60,7 +60,6 @@ The hedging model accounts for the following:
   5. The model calculates gross cash flows and ignores any tax implications regarding foreign exchange gains/losses, interest expenses on the Euro loan, or interest income on the USD deposit.  
   6. The model assumes the 1-Year Forward Rate 0f 1.0935 is a fixed market quote. However, based on the spot rate (1.1770) and the narrow interest rate differential (3.670% U.S. vs. 3.691% E.U.), this forward rate violates Covered Interest Rate Parity and creates an arbitrage opportunity.			  
 
-
 ---
 
 ## 4. Calculation Flow
@@ -70,8 +69,6 @@ Forward Hedging: This strategy locks in the future domestic value of the receiva
 
 Money Market Hedging: This strategy uses current spot markets and money markets to synthetically lock in a future exchange rate.  
   1. q
-
-> *Your goal: anyone reading this section should know exactly how to implement your logic in Excel or code — without you explaining formulas.*
 
 ---
 
@@ -100,8 +97,6 @@ Example:
 > Vary EURUSD spot at maturity \(S_T\) from 0.95×S₀ to 1.05×S₀ in increments of 0.01.  
 > For each value, compute USD proceeds under all hedge strategies.  
 > Present results as a comparison table and line chart.
-
-> *Professional analysts always test sensitivity — it shows how robust their recommendations are.*
 
 ---
 
