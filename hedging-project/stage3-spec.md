@@ -37,19 +37,21 @@ Known variables that serve as the model's foundation:
 
 ## 3. Assumptions & Constraints
 
-The hedging model accounts for the following:  
+The hedging model assumes the following:  
 
-  1. The model assumes zero broker fees, bank commissions, or execution costs.			  
-  2. The model assumes the firm can transact exactly at the quoted spot (1.1781) and forward (1.0935) rates with no bid-ask spread.			  
-  3. The model applies a single foreign interest rate (3.691%) and domestic interest rate (3.670%) with no spread.			  
-  4. The money market hedge assumes the firm has immediate, unrestricted access to a €16.37M line of credit at the stated interest rate.			  
-  5. The model calculates gross cash flows and ignores any tax implications regarding FX gains/losses, interest expenses on the Euro loan, or interest income on the USD deposit.  
-  6. The model assumes the 1-year forward rate 0f 1.0935 is a fixed market quote. However, based on the spot rate (1.1770) and the narrow interest rate differential (3.670% U.S. vs. 3.691% E.U.), this forward rate violates Covered Interest Rate Parity and creates an arbitrage opportunity.			  
-
+  1. Interest rates are quoted on a simple annual basis.  
+  2. Forward rate provided represents a 1-year maturity.
+  3. Exchange rates expressed as USD per EUR. 
+  4. The model assumes zero broker fees, bank commissions, or execution costs.			  
+  5. The model assumes the firm can transact exactly at the quoted spot (1.1781) and forward (1.0935) rates with no bid-ask spread.			  
+  6. The model applies a single foreign interest rate (3.691%) and domestic interest rate (3.670%) with no spread.			  
+  7. The model calculates gross cash flows and ignores any tax implications regarding FX gains/losses, interest expenses on the Euro loan, or interest income on the USD deposit.  
+  
 ---
 
 ## 4. Calculation Flow  
-  
+
+
   1. Calculate USD proceeds under the forward hedge using the provided forward rate.  
   2. Calculate USD proceeds under a synthetic forward hedge using money market rates.  
   3. Compare results across hedges at the base case and across various sensitivities of EUR appreciation/depreciation.  
@@ -78,7 +80,9 @@ To test our strategies against FX fluctuations, the table of hedging outcomes is
 
 ## 7. Limitations & Next Steps
 
-Briefly note any analytical limits (e.g., volatility ignored, credit risk excluded) and outline your immediate next step (e.g., model build in Stage 3).
+  1. The money market hedge assumes the firm has immediate, unrestricted access to a €16.37M line of credit at the stated interest rate.
+  2. The model assumes the 1-year forward rate 0f 1.0935 is a fixed market quote. However, based on the spot rate (1.1770) and the narrow interest rate differential (3.670% U.S. vs. 3.691% E.U.), this forward rate violates Covered Interest Rate Parity and creates an arbitrage opportunity.			    
+    
 
 Example phrasing:
 > This specification does not incorporate implied volatility or transaction costs. The next phase will involve constructing an Excel model implementing this logic to quantify results under each hedge structure.
