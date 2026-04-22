@@ -7,8 +7,8 @@
 **Version:** 2.0    
 **LLM Used:** Gemini  
 
-**Role:** Financial Analyst  
-**Audience:** Chief Financial Officer  
+**To:** Chief Financial Officer
+**From:** Financial Risk Management 
 
 **Purpose:** Provide a professional, quantitative specification outlining the analytical structure for evaluating FX hedging alternatives.
 
