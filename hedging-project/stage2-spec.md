@@ -58,7 +58,7 @@ The hedging model accounts for the following:
   3. The model applies a single foreign interest rate (3.691%) and domestic interest rate (3.670%) with no spread.			  
   4. The Money Market hedge assumes the firm has immediate, unrestricted access to a €16.37M line of credit at the stated interest rate.			  
   5. The model calculates gross cash flows and ignores any tax implications regarding foreign exchange gains/losses, interest expenses on the Euro loan, or interest income on the USD deposit.  
-  6. The model assumes the 1-Year Forward Rate 0f 1.0935 is a fixed market quote. However, based on the spot rate (1.1770) and the narrow interest rate differential (3.670% U.S. vs. 3.691% E.U.), this forward rate violates Covered Interest Rate Parity and creates an arbitrage opportunity favoring the Money Market Hedge.			  
+  6. The model assumes the 1-Year Forward Rate 0f 1.0935 is a fixed market quote. However, based on the spot rate (1.1770) and the narrow interest rate differential (3.670% U.S. vs. 3.691% E.U.), this forward rate violates Covered Interest Rate Parity and creates an arbitrage opportunity.			  
 
 
 ---
