@@ -4,7 +4,7 @@
 **Updated by:** Michael Ballesteros  
 **Date Created:** 4/21/26    
 **Date Updated:** 4/21/26      
-**Version:** [2.0]  
+**Version:** 2.0    
 **LLM Used:** Gemini  
 
 **Role:** Financial Analyst / Treasury Analyst  
