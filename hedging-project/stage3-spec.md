@@ -10,7 +10,7 @@
 **To:** Chief Financial Officer  
 **From:** Financial Risk Management   
 
-**Purpose:** Provide a professional, quantitative specification outlining the analytical structure for evaluating FX hedging alternatives.
+**Purpose:** Provide a detailed specification outlining a replicable model for evaluating FX hedging alternatives.
 
 ---
 
