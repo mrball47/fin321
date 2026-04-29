@@ -33,8 +33,6 @@ Present your key findings by strategy:
 |----------|------------------|-----------------|
 | **Forward Hedge** | Locked-in USD proceeds | Certainty vs. opportunity cost |
 | **Money Market Hedge** | Synthetic forward via borrow/convert/invest | Parity with forward; liquidity implications |
-| **Put Option** | Floor protection with upside | Premium cost vs. downside protection |
-| **Call Option** | Upside participation | When and why this applies |
 | **No Hedge** | Unhedged USD proceeds at various S_T | Risk exposure baseline |
 
 Focus on **insight rather than computation** — the CFO already has the numbers.
@@ -138,7 +136,7 @@ The prompt itself is the primary deliverable — it demonstrates your ability to
 
 ---
 
-## Extra Credit (2 points): Areas for Further Study & Improvement
+## Areas for Further Study & Improvement
 
 In 1–2 paragraphs each, discuss **2–3** of the following topics and how they connect to your project:
 
@@ -159,40 +157,3 @@ In 1–2 paragraphs each, discuss **2–3** of the following topics and how they
 | Structured AI Prompt | Clear, complete, reproducible prompt with all scenario data | 2 |
 | Professionalism & Communication | Executive-ready, well-structured deliverable | 1 |
 | AI-Generated Output OR Manual Analysis | Working spreadsheet from prompt, or equivalent manual work | 2 |
-
----
-
-## Career Relevance
-
-This project builds skills used in:
-
-### Corporate Treasury
-- Exposure management and hedge design
-- Hedge performance testing
-- AI-augmented scenario analysis
-
-### Investment Banking
-- Cross-border deal modeling
-- FX-sensitive valuation adjustments
-
-### FP&A
-- Cash flow forecasting under FX uncertainty
-- Scenario building and budget risk assessment
-
-### Accounting & Audit
-- OCI vs. P&L hedge accounting documentation
-- Hedge effectiveness proof
-- Version-controlled models and audit trails
-
-### Data, Analytics & AI Roles
-- Spec-to-model-to-prompt automation pipeline
-- GitHub collaboration and version control
-- AI-assisted financial modeling and reporting
-
----
-
-## Why This Matters
-
-This multi-stage journey reflects workflows used at Big 4 accounting firms, corporate treasury teams, investment banks, and consulting firms. You are demonstrating analytical reasoning, automation fluency, model governance, financial decision leadership, and technical communication.
-
-**This is a portfolio-ready artifact for internships, jobs, and graduate programs.**
