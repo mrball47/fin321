@@ -12,10 +12,14 @@ This stage combines quantitative rigor, interpretation, communication, and AI fl
 
 ### A. Exposure Summary
 
-Brief restatement:
-- Currency, amount, and timing of the receivable
-- FX risk and consequences for USD cash flows
-- Business context for the hedging decision
+The firm is anticipating a Euro-denominated receivable, due in one year at a baseline value of $20,000,000 USD . Because our functional currency is the US dollar, this unhedged cash flow exposes our projected revenue to volatility in the EUR/USD exchange rate. To manage this risk, we will be analyzing various hedging strategies for the receivable, modeling such strategies under various levels of volatility, and using AI to reconstruct our model and provide recommendations for the firm.
+
+Over a 1-year horizon, the EUR/USD exchange rate is susceptible to macroeconomic volatility driven by changes in central bank interest rates, shifting inflation data, and geopolitical uncertainty. If the Euro weakens before the settlement date, the converted USD equivalent of our revenue will decline. 
+
+Securing such risk will accomplish the following:
+  * Protect the receivable's USD value against adverse currency movements. 
+  * Balance downside protection with hedging costs (minimizing upfront cash requirements and premiums, or avoiding unnecessary strain the firm's balance sheets and credit lines).
+  * Establish a framework for evaluating future international receivables and mitigating currency risk.
 
 ---
 
