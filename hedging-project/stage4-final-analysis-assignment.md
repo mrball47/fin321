@@ -10,12 +10,6 @@ This stage combines quantitative rigor, interpretation, communication, and AI fl
 
 ---
 
-## Deliverable Requirements (2–4 page `.md` file committed to GitHub)
-
-Must include:
-
----
-
 ### A. Exposure Summary
 
 Brief restatement:
@@ -54,8 +48,6 @@ Highlight differences in certainty, flexibility, and cost across strategies. Ref
 Choose one strategy (or combination):
 - Forward
 - Money Market
-- Put
-- Call
 - Combination
 
 Support with data from your model, risk profile, and business strategy.
