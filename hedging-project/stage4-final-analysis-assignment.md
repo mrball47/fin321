@@ -1,4 +1,4 @@
-# Stage 4 – Final Analysis, Prompt Engineering & Recommendation (10 Points)
+Final Analysis, Prompt Engineering & Recommendation
 
 ## Goal
 
