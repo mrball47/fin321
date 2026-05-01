@@ -1,13 +1,5 @@
 # Final Analysis, Prompt Engineering & Recommendation
 
-## Goal
-
-Deliver a polished, executive-ready memo summarizing your FX hedge analysis and recommending the best strategy. As part of this deliverable, you will also write a **structured AI prompt** that could regenerate your spreadsheet model — demonstrating your ability to convert domain knowledge into machine-readable instructions.
-
-This stage combines quantitative rigor, interpretation, communication, and AI fluency — exactly what senior finance leaders expect from modern analysts.
-
-**Hint:** Have your LLM generate a draft based on your Stage 2 spreadsheet output and Stage 3 specification, then refine it with your own analysis and judgment. If you don't have AI access, write the analysis directly from your spreadsheet results and submit the prompt as a standalone document.
-
 ---
 
 ### A. Exposure Summary
