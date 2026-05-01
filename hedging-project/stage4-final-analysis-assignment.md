@@ -35,21 +35,21 @@ The no hedge strategy proved to be the most profibable from the current spot rat
 
 The no hedge strategy captures full upside from the baseline rate, but also is exposed to downside risk. The money market hedge eliminates any such risk, but consumes credit capacity needed to execute the hedge. The forward rate may be beneficial for its aforementioned sensitivities, but such levels represent a relatively large downside move from current levels.
 
-| EUR/USD Spot Exchange Rate | Winner |
-|----------|------------------|
-| **$1.12** | Money Market Hedge |
-| **$1.13** | Money Market Hedge |
-| **$1.14** | Money Market Hedge |
-| **$1.15** | Money Market Hedge |
-| **$1.16** | Money Market Hedge |
-| **$1.17** | Money Market Hedge |
-| **$1.18** | No Hedge |
-| **$1.19** | No Hedge |
-| **$1.20** | No Hedge |
-| **$1.21** | No Hedge |
-| **$1.22** | No Hedge |
-| **$1.23** | No Hedge |
-| **$1.24** | No Hedge |
+| EUR/USD Spot Exchange Rate | Winner (of Hedge/No Hedge) | (of Hedges) |
+|----------|------------------|------------------|
+| **$1.12** | Money Market Hedge | Money Market Hedge | 
+| **$1.13** | Money Market Hedge | Money Market Hedge | 
+| **$1.14** | Money Market Hedge | Money Market Hedge | 
+| **$1.15** | Money Market Hedge | Money Market Hedge | 
+| **$1.16** | Money Market Hedge | Money Market Hedge | 
+| **$1.17** | Money Market Hedge | Money Market Hedge | 
+| **$1.18** | No Hedge | Money Market Hedge | 
+| **$1.19** | No Hedge | Money Market Hedge | 
+| **$1.20** | No Hedge | Money Market Hedge | 
+| **$1.21** | No Hedge | Money Market Hedge | 
+| **$1.22** | No Hedge | Money Market Hedge | 
+| **$1.23** | No Hedge | Money Market Hedge | 
+| **$1.24** | No Hedge | Money Market Hedge | 
 
 ---
 
@@ -61,7 +61,9 @@ The [hedging model](https://github.com/mrball47/fin-321/blob/main/hedging-projec
 
 ### E. Executive Justification
 
-Both the money market 
+Both the money market the forward hedge lock in USD proceeds with full certainty, which are less risky than an unprotected no hedge strategy. However, the money market hedge solidifies a receivable value of $19,995,950, which is around $1.4 million more than the forward hedge at $18,589,035. The sensitivity table shows that for the comparisons between all strategies excluding the no hedge, the money market hedge was more profitable at all sensitivites until the quoted forward rate. 
+
+While the money market hedge does carry some complexity in its usage of credit to execute a spot conversion, it secures more USD proceeds outright while eliminating risks in EUR depreciation. The forward hedge is mathematically inferior unless the spot rate falls to below $1.0935, which represents a move larger than +/-5%. This 
 
 ---
 
