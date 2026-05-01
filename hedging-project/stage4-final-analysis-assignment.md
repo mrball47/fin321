@@ -12,7 +12,7 @@ This stage combines quantitative rigor, interpretation, communication, and AI fl
 
 ### A. Exposure Summary
 
-The firm is anticipating a Euro-denominated receivable, due in one year at a baseline value of $20,000,000 USD . Because our functional currency is the US dollar, this unhedged cash flow exposes our projected revenue to volatility in the EUR/USD exchange rate. To manage this risk, we will be analyzing various hedging strategies for the receivable, modeling such strategies under various levels of volatility, and using AI to reconstruct our model and provide recommendations for the firm.
+The firm is anticipating a Euro-denominated receivable, due in one year at a baseline value of $20,000,000 USD. Because our functional currency is the US dollar, this unhedged cash flow exposes our projected revenue to volatility in the EUR/USD exchange rate. To manage this risk, we will be analyzing various hedging strategies for the receivable, modeling such strategies under various levels of volatility, and using AI to reconstruct our model and provide recommendations for the firm.
 
 Over a 1-year horizon, the EUR/USD exchange rate is susceptible to macroeconomic volatility driven by changes in central bank interest rates, shifting inflation data, and geopolitical uncertainty. If the Euro weakens before the settlement date, the converted USD equivalent of our revenue will decline. 
 
@@ -27,11 +27,11 @@ Securing such risk will accomplish the following:
 
 Our key findings are summarized in the following table:
 
-| Strategy | Methodology | Insight |
-|----------|------------------|-----------------|
-| **Forward Hedge** | Provides complete certainty for future USD proceeds at a given forward rate. | Requires no upfront premium, but eliminates any upside profit potential if the Euro appreciates. |
-| **Money Market Hedge** | Borrows against the expected Euro receivable today, converts to USD at the current spot rate, and uses the incoming Euro payment to retire the debt next year. | Eliminates upside potential, and consumes the firm's credit capacity needed to borrow. |
-| **No Hedge** | Continue without any safeguards against FX volatility. | Preserves credit with unlimited upside potential, but risks full exposure to downside risk. |
+| Strategy | Methodology | Insight | Results |
+|----------|------------------|-----------------|-------|
+| **Forward Hedge** | Provides complete certainty for future USD proceeds at a given forward rate. | Requires no upfront premium, but eliminates any upside profit potential if the Euro appreciates. | a |
+| **Money Market Hedge** | Borrows against the expected Euro receivable today, converts to USD at the current spot rate, and uses the incoming Euro payment to retire the debt next year. | Eliminates upside potential, and consumes the firm's credit capacity needed to borrow. | a |
+| **No Hedge** | Continue without any safeguards against FX volatility. | Preserves credit with unlimited upside potential, but risks full exposure to downside risk. | Won 7/13 scenarios |
 
 ---
 
