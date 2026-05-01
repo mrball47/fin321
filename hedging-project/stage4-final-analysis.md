@@ -22,7 +22,7 @@ Over a 1-year horizon, the EUR/USD exchange rate is susceptible to macroeconomic
 
 Securing such risk will accomplish the following:
   * Protect the receivable's USD value against adverse currency movements. 
-  * Balance downside protection with hedging costs (minimizing upfront cash requirements and premiums, or avoiding unnecessary strain the firm's balance sheets and credit lines).
+  * Balance downside protection with hedging costs (minimizing upfront cash requirements and premiums, or avoiding unnecessary strain on the firm's balance sheets and credit lines).
   * Establish a framework for evaluating future international receivables and mitigating currency risk.
 
 ---
@@ -41,9 +41,9 @@ Our key findings are summarized in the following table:
 
 ### C. Sensitivity Interpretation
 
-Our findings were organized across various sensitivities, which spanned +/-5% from the current EUR/USD spot rate ($1.18). These sensitivies allow us to evaluate which hedging strategies are best if the EUR depreciates or appreciates within the model's parameters.
+Our findings were organized across various sensitivities, which spanned +/-5% from the current EUR/USD spot rate ($1.18). These sensitivities allow us to evaluate which hedging strategies are best if the EUR depreciates or appreciates within the model's parameters.
 
-The no hedge strategy proved to be the most profibable from the current spot rate upwards, which represent scenarios where the EUR appreciates. The money market hedge won in the sensitivities below the current spot rate, which represent scenarios where the EUR depreciates. The forward hedge implicitly wins at any scenarios below the quoted forward rate ($1.0935); however, these sensitivities are below the model's given range of uncertainty.
+The no hedge strategy proved to be the most profitable from the current spot rate upwards, which represent scenarios where the EUR appreciates. The money market hedge won in the sensitivities below the current spot rate, which represent scenarios where the EUR depreciates. The forward hedge implicitly wins at any scenarios below the quoted forward rate ($1.0935); however, these sensitivities are below the model's given range of uncertainty.
 
 The no hedge strategy captures full upside from the baseline rate, but also is exposed to downside risk. The money market hedge eliminates any such risk, but consumes credit capacity needed to execute the hedge. The forward rate may be beneficial for its aforementioned sensitivities, but such levels represent a relatively large downside move from current levels.
 
@@ -67,17 +67,17 @@ The no hedge strategy captures full upside from the baseline rate, but also is e
 
 ### D. Strategic Recommendation
 
-The [hedging model](https://github.com/mrball47/fin-321/blob/main/hedging-project/stage2-excel/model-updated.xlsx) suggests that — relative to the baseline spot rate of $1.18 — using a no hedge strategy would be the most protifable for the firm based on the given sensitivities' win percentages. However, completely leaving the receivable exposed to adverse FX changes would be a risk if the EUR/USD were to move below the current spot rate. Even if it removes any upside potential from an appreciation in the EUR, it would be best for the firm to use a money market hedge in anticipation of the firm's receivable.
+The [hedging model](https://github.com/mrball47/fin-321/blob/main/hedging-project/stage2-excel/model-updated.xlsx) suggests that — relative to the baseline spot rate of $1.18 — using a no hedge strategy would be the most profitable for the firm based on the given sensitivities' win percentages. However, completely leaving the receivable exposed to adverse FX changes would be a risk if the EUR/USD were to move below the current spot rate. Even if it removes any upside potential from an appreciation in the EUR, it would be best for the firm to use a money market hedge in anticipation of the firm's receivable.
 
-It is important to note that the model assumes no fees, commissions, and transaction costs for any hedging strategies, with its underlying data quoted on April 17, 2026 at 5:00 PM EDT. It also assumed that the ability to borrow and execute within certain parameters of a hedging strategy can be met, with and tax implications and transactional complications being ignored.
+It is important to note that the model assumes no fees, commissions, and transaction costs for any hedging strategies, with its underlying data quoted on April 17, 2026 at 5:00 PM EDT. It also assumed that the ability to borrow and execute within certain parameters of a hedging strategy can be met, with any tax implications and transactional complications being ignored.
 
 ---
 
 ### E. Executive Justification
 
-Both the money market the forward hedge lock in USD proceeds with full certainty, which are less risky than an unprotected no hedge strategy. However, the money market hedge solidifies a receivable value of $19,995,950, which is around $1.4 million more than the forward hedge at $18,589,035. The sensitivity table shows that for the comparisons between all strategies excluding the no hedge, the money market hedge was more profitable at all sensitivites until the quoted forward rate at $1.0935. 
+Both the money market and the forward hedge lock in USD proceeds with full certainty, which are less risky than an unprotected no hedge strategy. However, the money market hedge solidifies a receivable value of $19,995,950, which is around $1.4 million more than the forward hedge at $18,589,035. The sensitivity table shows that for the comparisons between all strategies excluding the no hedge, the money market hedge was more profitable at all sensitivities until the quoted forward rate at $1.0935. 
 
-While the money market hedge does carry some complexity in its usage of credit to execute a spot conversion, it secures more USD proceeds outright while eliminating risks in EUR depreciation. The forward hedge is mathematically inferior unless the spot rate falls to below $1.0935, which represents a move larger than +/-5%. Relative to that differential, the forward rate fails to comparatively retain profitability at levels above the forward rate. Leaving $1.4 million on the table in exchange for protection against that large of a swing doesn't seem feasible for the immmediate proceeds that can be guaranteed.
+While the money market hedge does carry some complexity in its usage of credit to execute a spot conversion, it secures more USD proceeds outright while eliminating risks in EUR depreciation. The forward hedge is mathematically inferior unless the spot rate falls to below $1.0935, which represents a move larger than +/-5%. Relative to that differential, the forward rate fails to comparatively retain profitability at levels above the forward rate. Leaving $1.4 million on the table in exchange for protection against that large of a swing doesn't seem feasible for the immediate proceeds that can be guaranteed.
 
 In addition to tying up credit, the firm also faces complexities in accounting for a money market hedge. Taking out a foreign loan and creating a domestic cash asset simultaneously increases assets and liabilities on the balance sheet. This temporary inflation can negatively skew certain financial ratios — like debt-to-equity or return on assets — until the receivable is collected and the loan is paid off.
 
@@ -131,7 +131,7 @@ Block 2: Money Market Hedge (Provide the three distinct steps required to execut
   * Calculation: Multiply the result of Step [b] by (1 + U.S. 1-Year Interest Rate). Format as Yellow background (Outcome).
   * Formatting: Outcome, ($); Add the text "<-- LOCKED IN: in one year we will have this amount to the right of the result."
 
-4. Senario Analysis
+4. Scenario Analysis
 
 Create a large data table at the bottom of the spreadsheet to analyze how different future spot prices impact the strategies. Provide the exact logic/formulas for each column.
 
@@ -140,7 +140,7 @@ Create a column starting at the current spot rate, and incrementally increase/de
 
 Column Headers & Logic:
 
-Apply a gradient ranging from green to red, that transitions from yielding most to leave converted proceeds, respectively.
+Apply a gradient ranging from green to red, that transitions from yielding most to least converted proceeds, respectively.
 
 * In one year, we receive - 0. No Hedge: Multiply the Future Spot Price in that row by the original 1-Year Receivable.
 * In one year, we receive - 1. Forward Hedge: Absolute reference to the Forward Hedge Outcome. This number is static through all sensitivities.
