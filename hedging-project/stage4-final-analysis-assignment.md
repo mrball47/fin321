@@ -127,11 +127,12 @@ Row Setup:
 Create a column starting at the current spot rate, and incrementally increase/decrease by $0.01 until the table is organized +/-5% from the current baseline. Add side notes outside the table decreasing from the current spot rate "<-- Worse ([foreign currency] depreciates)", at the current spot rate "Baseline", and increasing from the current spot rate "<-- Better ([foreign currency] appreciates).
 
 Column Headers & Logic:
+
+Apply a gradient ranging from green to red, that transitions from yielding most to leave converted proceeds, respectively.
+
 * In one year, we receive - 0. No Hedge: Multiply the Future Spot Price in that row by the original 1-Year Receivable.
 * In one year, we receive - 1. Forward Hedge: Absolute reference to the Forward Hedge Outcome. This number is static through all sensitivities.
 * In one year, we receive - 2. Money Market Hedge: Absolute reference to the Money Market Hedge Outcome. This number is static all the way down.
-
-Apply a gradient ranging from green to red, that transitions from yielding most to leave converted proceeds, respectively.
 
 * Hedge Profit (Loss) vs. No Hedge - 1. Forward Hedge: Subtract the "0. No Hedge" value from the "1. Forward Hedge" value for that row.
 * Hedge Profit (Loss) vs. No Hedge - 2. Money Market Hedge: Subtract the "0. No Hedge" value from the "2. Money Market Hedge" value for that row. 
@@ -141,12 +142,16 @@ Apply a gradient ranging from green to red, that transitions from yielding most 
 
 Please generate the complete guide so a user can build this from scratch.
 
-Please reference the following for a hypothetical [scenario](https://github.com/mrball47/fin-321/blob/main/hedging-project/stage2-excel/model-updated.xlsx)
+Please reference the following for a hypothetical [scenario](https://github.com/mrball47/fin-321/blob/main/hedging-project/scenario.md) and [model](https://github.com/mrball47/fin-321/blob/main/hedging-project/stage2-excel/model-updated.xlsx) produced from the following values:
+
+* 1-Year Receivable: €16,999,575.01
+* Current EUR/USD Spot Exchange Rate: $1.1765
+* Money Market - U.S. 1-Year Interest Rate (domestic): 3.670%
+* Money Market - E.U. 1-Year Interest Rate (foreign): 3.691%
+* Forwards - EUR/USD 1-Year Forward Exchange Rate: $1.0935
 
 ---
 
-
----
 
 ## Areas for Further Study & Improvement
 
