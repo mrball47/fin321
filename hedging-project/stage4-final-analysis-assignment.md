@@ -103,57 +103,48 @@ Block 1: Forward Hedge
 
 * Row Label: [a] Sell EUR/USD 1-Year Forward
   * Calculation: Multiply the 1-Year Receivable by the 1-Year Forward Exchange Rate.
-* Formatting: Outcome. Add the text "<-- LOCKED IN: in one year we will have this amount to the right of the result."
+  * Formatting: Outcome; Add the text "<-- LOCKED IN: in one year we will have this amount to the right of the result."
 
-Target Result: $18,589,035.27
+Block 2: Money Market Hedge (Provide the three distinct steps required to execute this hedge.)
 
-Block 2: Money Market Hedge
-Provide the three distinct steps required to execute this hedge.
+* Step [a] Borrow the discounted present value of the foreign receivable
+  * Divide the 1-Year Receivable by (1 + E.U. 1-Year Interest Rate).
+  * Formatting: Formula
+  
+*Step [b] Convert [a] into domestic at the current spot exchange
+ * Calculation: Multiply the result of Step [a] by the Current EUR/USD Spot Exchange Rate. 
+ * Formatting: Formula
+ 
+* Step [c] Invest [b] at the prevailing domestic interest rate
+  * Calculation: Multiply the result of Step [b] by (1 + U.S. 1-Year Interest Rate). Format as Yellow background (Outcome).
+  * Formatting: Outcome; Add the text "<-- LOCKED IN: in one year we will have this amount to the right of the result."
 
-Step [a] Borrow the discounted present value of the foreign receivable: Divide the 1-Year Receivable by (1 + E.U. 1-Year Interest Rate). Format as Blue text. Target Result: €16,394,455.65.
+4. Senario Analysis
 
-Step [b] Convert [a] into domestic at the current spot exchange: Multiply the result of Step [a] by the Current EUR/USD Spot Exchange Rate. Format as Blue text. Target Result: $19,288,077.
-
-Step [c] Invest [b] at the prevailing domestic interest rate: Multiply the result of Step [b] by (1 + U.S. 1-Year Interest Rate). Format as Yellow background (Outcome). Add the text <-- LOCKED IN: in one year we will have this amount to the right of the result. Target Result: $19,995,950.
-
-4. Sensitivity Table / Scenario Analysis
 Create a large data table at the bottom of the spreadsheet to analyze how different future spot prices impact the strategies. Provide the exact logic/formulas for each column.
 
-Row Setup (Future Spot Price):
-Create a column starting at $1.12 and ending at $1.24, moving in increments of $0.01. Add side notes outside the table: point to $1.12 with <-- Worse (EUR depreciates), $1.18 with <-- Baseline, and $1.24 with <-- Better (EUR appreciates).
+Row Setup:
+Create a column starting at the current spot rate, and incrementally increase/decrease by $0.01 until the table is organized +/-5% from the current baseline. Add side notes outside the table decreasing from the current spot rate "<-- Worse ([foreign currency] depreciates)", at the current spot rate "Baseline", and increasing from the current spot rate "<-- Better ([foreign currency] appreciates).
 
 Column Headers & Logic:
+* In one year, we receive - 0. No Hedge: Multiply the Future Spot Price in that row by the original 1-Year Receivable.
+* In one year, we receive - 1. Forward Hedge: Absolute reference to the Forward Hedge Outcome. This number is static through all sensitivities.
+* In one year, we receive - 2. Money Market Hedge: Absolute reference to the Money Market Hedge Outcome. This number is static all the way down.
 
-In one year, we receive - 0. No Hedge: Multiply the Future Spot Price in that row by the original 1-Year Receivable (€16,999,575.01).
+Apply a gradient ranging from green to red, that transitions from yielding most to leave converted proceeds, respectively.
 
-In one year, we receive - 1. Forward Hedge: Absolute reference to the Forward Hedge Outcome ($18,589,035). This number is static all the way down.
+* Hedge Profit (Loss) vs. No Hedge - 1. Forward Hedge: Subtract the "0. No Hedge" value from the "1. Forward Hedge" value for that row.
+* Hedge Profit (Loss) vs. No Hedge - 2. Money Market Hedge: Subtract the "0. No Hedge" value from the "2. Money Market Hedge" value for that row. 
 
-In one year, we receive - 2. Money Market Hedge: Absolute reference to the Money Market Hedge Outcome ($19,995,950). This number is static all the way down.
-
-Hedge Profit (Loss) vs. No Hedge - 1. Forward Hedge: Subtract the "0. No Hedge" value from the "1. Forward Hedge" value for that row. Format as Blue text.
-
-Hedge Profit (Loss) vs. No Hedge - 2. Money Market Hedge: Subtract the "0. No Hedge" value from the "2. Money Market Hedge" value for that row. Format as Blue text.
-
-Winner - of Hedge / No Hedge: Write an IF statement that compares the three "In one year, we receive" columns. It should output the text name of the column that yields the highest value (e.g., "0. No Hedge", "1. Forward Hedge", or "2. Money Market Hedge"). Format as Blue text.
-
-Winner - of Hedges: Write an IF statement comparing only the Forward Hedge vs. Money Market Hedge columns. It should output the text name of the winning hedge. Format as Blue text.
+* Winner - of Hedge / No Hedge: Write an IF statement that compares the three "In one year, we receive" columns. It should output the text name of the column that yields the highest value (e.g., "0. No Hedge", "1. Forward Hedge", or "2. Money Market Hedge"). 
+* Winner - of Hedges: Write an IF statement comparing only the Forward Hedge vs. Money Market Hedge columns. It should output the text name of the winning hedge. 
 
 Please generate the complete guide so a user can build this from scratch.
 
-**Options for providing context:**
-1. **Best:** GitHub links to your spec and template files
-2. **Medium:** Upload `.md` or `.xlsx` files directly
-3. **Least:** Copy/paste text manually
+Please reference the following for a hypothetical [scenario](https://github.com/mrball47/fin-321/blob/main/hedging-project/stage2-excel/model-updated.xlsx)
 
 ---
 
-## Note on AI Access
-
-If you do not have access to an AI tool capable of generating Excel files, you may:
-1. Submit your structured prompt (Section F) as written.
-2. Submit your Stage 2 model as the primary spreadsheet artifact with a brief note explaining that you would use the prompt to regenerate it.
-
-The prompt itself is the primary deliverable — it demonstrates your ability to convert domain knowledge into machine-readable instructions.
 
 ---
 
