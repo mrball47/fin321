@@ -171,9 +171,9 @@ With those inputs, the model should produce the following values:
 
 ---
 
-## Areas for Further Study & Improvement
+### G. Areas for Further Study & Improvement
 
-1. AI Skills & Automation
+1. AI Automation
 
 In the current project scope, the hedging model relies on static, hardcoded variables, such as the fixed EUR/USD spot rate of $1.1765 and specific domestic/foreign interest rates. By integrating advanced AI tools with connected financial APIs, this process could be fully automated to pull live market data. Instead of manually updating the editable sections of the spreadsheet, an AI agent could fetch real-time exchange rates and yield curves, instantly recalculating the forward and money market hedge outcomes to provide more timely strategic recommendations for the firm.
 
