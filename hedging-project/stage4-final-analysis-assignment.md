@@ -29,9 +29,9 @@ Present your key findings by strategy:
 
 | Strategy | Methodology | Insight |
 |----------|------------------|-----------------|
-| **Forward Hedge** | Locks in USD proceeds at a given forward rate, with complete certainty at no contractual premium. | Certainty vs. opportunity cost |
-| **Money Market Hedge** | Synthetic forward via borrow/convert/invest | Parity with forward; liquidity implications |
-| **No Hedge** | Unhedged USD proceeds at various S_T | Risk exposure baseline |
+| **Forward Hedge** | Provides complete certainty for future USD proceeds at a given forward rate. | Requires no upfront premium, but eliminates any upside profit potential if the Euro appreciates. |
+| **Money Market Hedge** | Borrows against the expected Euro receivable today, converts to USD at the current spot rate, and uses the incoming Euro payment to retire the debt next year. | Eliminates upside potential, and consumes the firm's credit capacity needed to borrow. |
+| **No Hedge** | Continue without any safeguards against FX volatility. | Preserves credit with unlimited upside potential, but risks full exposure to downside risk. |
 
 ---
 
