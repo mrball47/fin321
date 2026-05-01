@@ -27,13 +27,11 @@ Securing such risk will accomplish the following:
 
 Present your key findings by strategy:
 
-| Strategy | What to Highlight | What to Discuss |
+| Strategy | Methodology | Insight |
 |----------|------------------|-----------------|
-| **Forward Hedge** | Locked-in USD proceeds | Certainty vs. opportunity cost |
+| **Forward Hedge** | Locks in USD proceeds at a given forward rate, with complete certainty at no contractual premium. | Certainty vs. opportunity cost |
 | **Money Market Hedge** | Synthetic forward via borrow/convert/invest | Parity with forward; liquidity implications |
 | **No Hedge** | Unhedged USD proceeds at various S_T | Risk exposure baseline |
-
-Focus on **insight rather than computation** — the CFO already has the numbers.
 
 ---
 
