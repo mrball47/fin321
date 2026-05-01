@@ -73,41 +73,36 @@ In addition to tying up credit, the firm also faces complexities in accounting f
 
 ### F. Structured AI Prompt 
 
-Here is a comprehensive prompt you can use to instruct an AI or financial analyst to  recreate this hedging model.:
+Here is a comprehensive prompt you can use to instruct an AI or financial analyst to recreate this hedging model:
 
 Your task is to recreate a specific financial model for "Hedging Foreign Currency Receivables." Please generate the step-by-step instructions, exact formulas, and structural layout required to build this model in Excel. Below are the specific requirements, hardcoded variables, formatting rules, and mathematical logic you must follow.
 
-## 1. Formatting and Color Coding
+1. Formatting and Color Coding
 
 Create a "Key" section at the top right of the spreadsheet to establish standard financial modeling formatting:
 
-Editable Inputs: Background color Light Pink/Red. These are hardcoded given variables.
+* Editable: Set background color to pink for editable inputs that are hardcoded given variables.
+* Outcome: Set background color to yellow for final results of a hedging strategy.
+* Formulas: Set text color to blue for cell used to calculate via a formula that isn't a final outcome.
 
-Outcome / Final Locked-in Amounts: Background color Yellow. These are the final results of a hedging strategy.
+2. Input Variables 
 
-Formulas: Font color Blue. Any cell that is calculated via a formula (but is not the final outcome) should use blue text.
+Set up the top left section of the sheet with the following exact labels and values in subsequent columns "Given" and "Variables". Ensure the values are formatted as specified in the Key. 
 
-2. Input Variables (The "Given" Section)
-Set up the top left section of the sheet with the following exact labels and values. Ensure the values are formatted as specified in the Key (Light Pink background).
+* 1-Year Receivable: €16,999,575.01 
+* Current EUR/USD Spot Exchange Rate: $1.1765
+* Money Market - U.S. 1-Year Interest Rate (domestic): 3.670%
+* Money Market - E.U. 1-Year Interest Rate (foreign): 3.691%
+* Forwards - EUR/USD 1-Year Forward Exchange Rate: $1.0935
 
-1-Year Receivable: €16,999,575.01
+3. Hedging Strategies 
 
-Current EUR/USD Spot Exchange Rate: $1.1765
-
-Money Market - U.S. 1-Year Interest Rate (domestic): 3.670%
-
-Money Market - E.U. 1-Year Interest Rate (foreign): 3.691%
-
-Forwards - EUR/USD 1-Year Forward Exchange Rate: $1.0935
-
-3. Hedging Strategies Section
 Below the inputs, create two distinct blocks for calculating the hedges. Provide the Excel formulas required to calculate each step based on the inputs above.
 
 Block 1: Forward Hedge
 
-Row Label: [a] Sell EUR/USD 1-Year Forward
-
-Calculation: Multiply the 1-Year Receivable by the 1-Year Forward Exchange Rate.
+* Row Label: [a] Sell EUR/USD 1-Year Forward
+  * Calculation: Multiply the 1-Year Receivable by the 1-Year Forward Exchange Rate.
 
 Formatting: Yellow background (Outcome). Add the text <-- LOCKED IN: in one year we will have this amount to the right of the result.
 
