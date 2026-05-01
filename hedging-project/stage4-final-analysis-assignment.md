@@ -89,11 +89,11 @@ Create a "Key" section at the top right of the spreadsheet to establish standard
 
 Set up the top left section of the sheet with the following exact labels and values in subsequent columns "Given" and "Variables". Ensure the values are formatted as specified in the Key. 
 
-* 1-Year Receivable: €16,999,575.01 
-* Current EUR/USD Spot Exchange Rate: $1.1765
-* Money Market - U.S. 1-Year Interest Rate (domestic): 3.670%
-* Money Market - E.U. 1-Year Interest Rate (foreign): 3.691%
-* Forwards - EUR/USD 1-Year Forward Exchange Rate: $1.0935
+* 1-Year Receivable: (Baseline value in foreign denomination)
+* Current EUR/USD Spot Exchange Rate: ($)
+* Money Market - U.S. 1-Year Interest Rate (domestic): (%)
+* Money Market - E.U. 1-Year Interest Rate (foreign): (%)
+* Forwards - EUR/USD 1-Year Forward Exchange Rate: ($)
 
 3. Hedging Strategies 
 
@@ -103,8 +103,7 @@ Block 1: Forward Hedge
 
 * Row Label: [a] Sell EUR/USD 1-Year Forward
   * Calculation: Multiply the 1-Year Receivable by the 1-Year Forward Exchange Rate.
-
-Formatting: Yellow background (Outcome). Add the text <-- LOCKED IN: in one year we will have this amount to the right of the result.
+* Formatting: Outcome. Add the text "<-- LOCKED IN: in one year we will have this amount to the right of the result."
 
 Target Result: $18,589,035.27
 
