@@ -55,7 +55,7 @@ The no hedge strategy captures full upside from the baseline rate, but also is e
 
 ### D. Strategic Recommendation
 
-(The model) [https://github.com/mrball47/fin-321/blob/main/hedging-project/stage2-excel/model-updated.xlsx]
+[The model] (https://github.com/mrball47/fin-321/blob/main/hedging-project/stage2-excel/model-updated.xlsx) 
 
 ---
 
