@@ -12,7 +12,7 @@ This stage combines quantitative rigor, interpretation, communication, and AI fl
 
 ### A. Exposure Summary
 
-The firm is anticipating a Euro-denominated receivable, due in one year at a baseline value of $20,000,000 USD. Because our functional currency is the US dollar, this unhedged cash flow exposes our projected revenue to volatility in the EUR/USD exchange rate. To manage this risk, we will be analyzing various hedging strategies for the receivable, modeling such strategies under various levels of volatility, and using AI to reconstruct our model and provide recommendations for the firm.
+The firm is anticipating a Euro-denominated receivable, due in one year at a baseline value of $20,000,000 USD. Because our functional currency is the US dollar, this unhedged cash flow exposes our projected revenue to volatility in the EUR/USD exchange rate. To manage this risk, we created an AI-replicable model to analyze various hedging strategies for the receivable, modeling such strategies under various levels of volatility, and provide recommendations for the firm.
 
 Over a 1-year horizon, the EUR/USD exchange rate is susceptible to macroeconomic volatility driven by changes in central bank interest rates, shifting inflation data, and geopolitical uncertainty. If the Euro weakens before the settlement date, the converted USD equivalent of our revenue will decline. 
 
@@ -63,12 +63,7 @@ The no hedge strategy captures full upside from the baseline rate, but also is e
 
 ### D. Strategic Recommendation
 
-Choose one strategy (or combination):
-- Forward
-- Money Market
-- Combination
-
-Support with data from your model, risk profile, and business strategy.
+The model 
 
 ---
 
@@ -156,14 +151,3 @@ In 1–2 paragraphs each, discuss **2–3** of the following topics and how they
 4. **Accounting & Audit Integration** — How do hedge accounting flows (OCI vs. P&L), documentation requirements, and reproducibility connect to this project? How could GitHub serve as audit evidence?
 
 ---
-
-## Evaluation
-
-| Criterion | Description | Points |
-|-----------|-------------|-------:|
-| Hedge Interpretation | Demonstrates understanding of what each strategy achieves | 2 |
-| Strategic Recommendation | Actionable, data-supported recommendation | 2 |
-| Sensitivity Analysis | Meaningful discussion of outcomes under different scenarios | 1 |
-| Structured AI Prompt | Clear, complete, reproducible prompt with all scenario data | 2 |
-| Professionalism & Communication | Executive-ready, well-structured deliverable | 1 |
-| AI-Generated Output OR Manual Analysis | Working spreadsheet from prompt, or equivalent manual work | 2 |
