@@ -1,5 +1,7 @@
 # Final Analysis, Prompt Engineering & Recommendation
 
+FROM: 
+
 ---
 
 ### A. Exposure Summary
@@ -169,7 +171,9 @@ Furthermore, AI-driven automation could elevate the project's static sensitivity
 
 2. GitHub & Version Control
 
+Utilizing GitHub for version control would transform this hedging framework from an isolated financial exercise into an enterprise-grade system. By committing the structured AI prompt, the model specifications, and the resulting calculations to a repository, any financial analyst or auditor could track the exact evolution of the firm's hedging logic. If a parameter in the money market hedge calculation is later modified to account for transaction fees or shifting credit spreads, this change is tracked through a discrete commit, providing a transparent history of who altered the model, what was changed, and why.
 
+This version-controlled environment ensures absolute replicability, directly tying back to the initial stages of your project. By treating the comprehensive AI prompt as source code, the exact instructions used to generate the spreadsheet are preserved. If the firm needs to rebuild the model from scratch across different platforms or computational environments, they can rely on the version-controlled prompt to reliably regenerate the precise formatting, color-coding, and mathematical logic without deviation.
 
 3. Accounting & Audit Integration
 
