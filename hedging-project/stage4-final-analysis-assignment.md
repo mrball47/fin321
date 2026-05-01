@@ -43,6 +43,22 @@ The no hedge strategy proved to be the most profibable from the current spot rat
 
 The no hedge strategy captures full upside from the baseline rate, but also is exposed to downside risk. The money market hedge eliminates any such risk, but consumes credit capacity needed to execute the hedge. The forward rate may be beneficial for its aforementioned sensitivities, but such levels represent a relatively large downside move from current levels.
 
+| EUR/USD Spot Exchange Rate | Winner |
+|----------|------------------|
+| **$1.12** | Money Market Hedge |
+| **$1.13** | Money Market Hedge |
+| **$1.14** | Money Market Hedge |
+| **$1.15** | Money Market Hedge |
+| **$1.16** | Money Market Hedge |
+| **$1.17** | Money Market Hedge |
+| **$1.18** | No Hedge |
+| **$1.19** | No Hedge |
+| **$1.20** | No Hedge |
+| **$1.21** | No Hedge |
+| **$1.22** | No Hedge |
+| **$1.23** | No Hedge |
+| **$1.24** | No Hedge |
+
 ---
 
 ### D. Strategic Recommendation
