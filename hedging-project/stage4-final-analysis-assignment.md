@@ -25,7 +25,7 @@ Securing such risk will accomplish the following:
 
 ### B. Summary of Hedge Outcomes
 
-Present your key findings by strategy:
+Our key findings are summarized in the following table:
 
 | Strategy | Methodology | Insight |
 |----------|------------------|-----------------|
