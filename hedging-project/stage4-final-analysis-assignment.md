@@ -1,4 +1,4 @@
-# Final Analysis, Prompt Engineering & Recommendation
+<img width="230" height="24" alt="image" src="https://github.com/user-attachments/assets/1bb236dc-697d-44df-8fe4-24e92ba110ac" /># Final Analysis, Prompt Engineering & Recommendation
 
 ---
 
@@ -103,21 +103,21 @@ Block 1: Forward Hedge
 
 * Row Label: [a] Sell EUR/USD 1-Year Forward
   * Calculation: Multiply the 1-Year Receivable by the 1-Year Forward Exchange Rate.
-  * Formatting: Outcome; Add the text "<-- LOCKED IN: in one year we will have this amount to the right of the result."
+  * Formatting: Outcome, ($); Add the text "<-- LOCKED IN: in one year we will have this amount to the right of the result."
 
 Block 2: Money Market Hedge (Provide the three distinct steps required to execute this hedge.)
 
 * Step [a] Borrow the discounted present value of the foreign receivable
   * Divide the 1-Year Receivable by (1 + E.U. 1-Year Interest Rate).
-  * Formatting: Formula
+  * Formatting: Formula, (foreign denomination)
   
 *Step [b] Convert [a] into domestic at the current spot exchange
  * Calculation: Multiply the result of Step [a] by the Current EUR/USD Spot Exchange Rate. 
- * Formatting: Formula
+ * Formatting: Formula, ($)
  
 * Step [c] Invest [b] at the prevailing domestic interest rate
   * Calculation: Multiply the result of Step [b] by (1 + U.S. 1-Year Interest Rate). Format as Yellow background (Outcome).
-  * Formatting: Outcome; Add the text "<-- LOCKED IN: in one year we will have this amount to the right of the result."
+  * Formatting: Outcome, ($); Add the text "<-- LOCKED IN: in one year we will have this amount to the right of the result."
 
 4. Senario Analysis
 
@@ -150,13 +150,31 @@ Please reference the following for a hypothetical [scenario](https://github.com/
 * Money Market - E.U. 1-Year Interest Rate (foreign): 3.691%
 * Forwards - EUR/USD 1-Year Forward Exchange Rate: $1.0935
 
+With those inputs, the model should produce the following values:
+
+* 1[a]: $18,589,035.27
+* 2[a]: €16,394,455.65
+* 2[b]: $19,288,077.00
+* 2[c]: $19,995,950.00
+
 ---
 
 ## Areas for Further Study & Improvement
 
 1. AI Skills & Automation
-In the current project scope, the hedging model relies on static, hardcoded variables, such as the fixed EUR/USD spot rate of $1.1765 and specific domestic/foreign interest rates. By integrating advanced AI tools with execution capabilities—like Code Interpreter or connected financial APIs—this process could be fully automated to pull live market data. Instead of manually updating the "Given" and "Variables" sections of the spreadsheet, an AI agent could fetch real-time exchange rates and yield curves, instantly recalculating the forward and money market hedge outcomes to provide up-to-the-minute strategic recommendations for the firm.
 
-Furthermore, AI-driven automation could elevate the project's static sensitivity analysis into dynamic Monte Carlo simulations. Rather than relying on a deterministic +/- 5% linear sensitivity table, an AI tool could run thousands of randomized simulations based on historical EUR/USD volatility and macroeconomic indicators. This would provide a probabilistic distribution of potential outcomes for the unhedged, forward, and money market strategies, offering the firm a much more robust and mathematically rigorous assessment of downside risk and upside potential.
+In the current project scope, the hedging model relies on static, hardcoded variables, such as the fixed EUR/USD spot rate of $1.1765 and specific domestic/foreign interest rates. By integrating advanced AI tools with connected financial APIs, this process could be fully automated to pull live market data. Instead of manually updating the editable sections of the spreadsheet, an AI agent could fetch real-time exchange rates and yield curves, instantly recalculating the forward and money market hedge outcomes to provide more timely strategic recommendations for the firm.
+
+Furthermore, AI-driven automation could elevate the project's static sensitivity analysis into dynamic Monte Carlo simulations. Rather than relying on a deterministic +/-5% linear sensitivity table, an AI tool could run thousands of randomized simulations based on historical EUR/USD volatility and macroeconomic indicators. This would provide a probabilistic distribution of potential outcomes for the unhedged, forward, and money market strategies. This offers the firm a much more robust and mathematically rigorous assessment of downside risk and upside potential.
+
+2. GitHub & Version Control
+
+
+
+3. Accounting & Audit Integration
+
+The execution of the recommended money market hedge introduces specific financial reporting complexities, briefly noted in our executive justification. Integrating formal hedge accounting standards (mainly in compliance with International Financial Reporting Standards) is a critical step, as it dictates whether the gains and losses from the hedge are recorded immediately in our P&L or deferred. Proper alignment and documentation of the hedging instrument against the underlying receivable is required to avoid artificial earnings volatility during the 1-year horizon.
+
+To qualify for these favorable hedge accounting treatments, strict documentation and ongoing proof of hedge effectiveness are mandatory. The structured logic of this project, combined with a version-control system like GitHub, can serve as audit evidence. Auditors can review the repository to access the exact sensitivity tables, scenario analyses, and comparative data used to justify the hedge, verifying that the strategic decision-making process was mathematically sound, compliant, and properly documented prior to the execution of any trades.
 
 ---
