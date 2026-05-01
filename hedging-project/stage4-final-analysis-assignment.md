@@ -55,7 +55,7 @@ The no hedge strategy captures full upside from the baseline rate, but also is e
 
 ### D. Strategic Recommendation
 
-The [hedging model](https://github.com/mrball47/fin-321/blob/main/hedging-project/stage2-excel/model-updated.xlsx) suggests that —— relative to the baseline spot rate —— using a no hedge strategy would be the most protifable for the firm based on the given sensitivities' win percentages. However, completely leaving the receivable exposed to adverse FX changes would be a risk if the EUR/USD were to move below the current spot rate. Even if it removes any upside potential from an appreciation in the EUR, it would be best for the firm to use a money market hedge in anticipation of the firm's receivable.
+The [hedging model](https://github.com/mrball47/fin-321/blob/main/hedging-project/stage2-excel/model-updated.xlsx) suggests that — relative to the baseline spot rate — using a no hedge strategy would be the most protifable for the firm based on the given sensitivities' win percentages. However, completely leaving the receivable exposed to adverse FX changes would be a risk if the EUR/USD were to move below the current spot rate. Even if it removes any upside potential from an appreciation in the EUR, it would be best for the firm to use a money market hedge in anticipation of the firm's receivable.
 
 ---
 
