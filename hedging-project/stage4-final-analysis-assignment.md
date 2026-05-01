@@ -1,4 +1,4 @@
-<img width="230" height="24" alt="image" src="https://github.com/user-attachments/assets/1bb236dc-697d-44df-8fe4-24e92ba110ac" /># Final Analysis, Prompt Engineering & Recommendation
+# Final Analysis, Prompt Engineering & Recommendation
 
 ---
 
