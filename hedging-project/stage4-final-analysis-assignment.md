@@ -1,6 +1,16 @@
 # Final Analysis, Prompt Engineering & Recommendation
 
-FROM: 
+**Created by:** Michael Ballesteros  
+**Updated by:** Michael Ballesteros  
+**Date Created:** 5/1/26    
+**Date Updated:** 5/1/26      
+**Version:** 3.0    
+**LLM Used:** Gemini  
+
+**To:** Chief Financial Officer  
+**From:** Financial Risk Management   
+
+**Purpose:** Recommend and justify a hedging strategy for the firm's upcoming receivable, with a system that can be used to recreate the same methodologies for other future receivables.
 
 ---
 
