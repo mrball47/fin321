@@ -152,14 +152,11 @@ Please reference the following for a hypothetical [scenario](https://github.com/
 
 ---
 
-
 ## Areas for Further Study & Improvement
 
-In 1–2 paragraphs each, discuss **2–3** of the following topics and how they connect to your project:
+1. AI Skills & Automation
+In the current project scope, the hedging model relies on static, hardcoded variables, such as the fixed EUR/USD spot rate of $1.1765 and specific domestic/foreign interest rates. By integrating advanced AI tools with execution capabilities—like Code Interpreter or connected financial APIs—this process could be fully automated to pull live market data. Instead of manually updating the "Given" and "Variables" sections of the spreadsheet, an AI agent could fetch real-time exchange rates and yield curves, instantly recalculating the forward and money market hedge outcomes to provide up-to-the-minute strategic recommendations for the firm.
 
-1. **AI Skills & Automation** — How could AI tools (e.g., Claude Skills, Code Interpreter) pull live market data, regenerate your model on demand, or run Monte Carlo simulations?
-2. **Multi-File Reasoning** — How could AI read your spec, model, and prompt together to maintain consistency, automate rebuilds, or create dashboards?
-3. **GitHub & Version Control** — How does committing specs, models, and prompts to GitHub enable auditable, reproducible model regeneration? Tie this to your Stages 1–3.
-4. **Accounting & Audit Integration** — How do hedge accounting flows (OCI vs. P&L), documentation requirements, and reproducibility connect to this project? How could GitHub serve as audit evidence?
+Furthermore, AI-driven automation could elevate the project's static sensitivity analysis into dynamic Monte Carlo simulations. Rather than relying on a deterministic +/- 5% linear sensitivity table, an AI tool could run thousands of randomized simulations based on historical EUR/USD volatility and macroeconomic indicators. This would provide a probabilistic distribution of potential outcomes for the unhedged, forward, and money market strategies, offering the firm a much more robust and mathematically rigorous assessment of downside risk and upside potential.
 
 ---
