@@ -71,50 +71,80 @@ In addition to tying up credit, the firm also faces complexities in accounting f
 
 ---
 
-### F. Structured AI Prompt (Required Component)
+### F. Structured AI Prompt 
 
-Write a **1–2 page structured prompt** (as a separate section or appendix) that could instruct an AI to generate your complete FX hedging spreadsheet. Your prompt must include:
+Here is a comprehensive prompt you can use to instruct an AI or financial analyst to  recreate this hedging model.:
 
-1. **Scenario-Specific Variables** — All values explicitly stated: FC_AMT, spot rate, forward rate, interest rates, option strikes, premiums, T_DAYS. AI does not infer missing data.
+Your task is to recreate a specific financial model for "Hedging Foreign Currency Receivables." Please generate the step-by-step instructions, exact formulas, and structural layout required to build this model in Excel. Below are the specific requirements, hardcoded variables, formatting rules, and mathematical logic you must follow.
 
-2. **Named Range Conventions** — Use standardized names matching your Stage 3 spec (e.g., `FC_AMT`, `S0_in`, `F0_in`, `R_USD`, `R_FC`, `K_PUT`, `K_CALL`, `PREM_PUT`, `PREM_CALL`, `T_DAYS`).
+## 1. Formatting and Color Coding
 
-3. **Spreadsheet Requirements** — Instruct the AI to produce:
-   - Input section with named ranges
-   - Color coding: **Yellow** = Inputs, **Blue** = Assumptions, **Green** = Formulas, **Gray** = Outputs
-   - Forward hedge, Money Market hedge (3-step), Option hedges (put and call)
-   - Sensitivity table (±5% range)
-   - Verification checks (forward vs. MM parity, formula consistency)
+Create a "Key" section at the top right of the spreadsheet to establish standard financial modeling formatting:
 
-4. **Hierarchical Structure** — Use clear section headers (e.g., `# GOAL`, `# INPUT VARIABLES`, `# MODEL LOGIC`, `# VERIFICATION`, `# EXPORT`).
+Editable Inputs: Background color Light Pink/Red. These are hardcoded given variables.
 
----
+Outcome / Final Locked-in Amounts: Background color Yellow. These are the final results of a hedging strategy.
 
-## Prompt Engineering Best Practices
+Formulas: Font color Blue. Any cell that is calculated via a formula (but is not the final outcome) should use blue text.
 
-### 1. Avoid Vague Prompts
+2. Input Variables (The "Given" Section)
+Set up the top left section of the sheet with the following exact labels and values. Ensure the values are formatted as specified in the Key (Light Pink background).
 
-Example of a bad prompt:
-> "Make me an FX hedging spreadsheet."
+1-Year Receivable: €16,999,575.01
 
-Example of a good prompt:
-> "Create an Excel workbook modeling forward, money market, and option hedges for a EUR 4,500,000 receivable using the following market data. Use named ranges matching the convention FC_AMT, S0_in, F0_in..."
+Current EUR/USD Spot Exchange Rate: $1.1765
 
-### 2. Provide All Variable Values
+Money Market - U.S. 1-Year Interest Rate (domestic): 3.670%
 
-AI does not infer values. Include every scenario variable explicitly.
+Money Market - E.U. 1-Year Interest Rate (foreign): 3.691%
 
-### 3. Use Named Ranges Consistently
+Forwards - EUR/USD 1-Year Forward Exchange Rate: $1.0935
 
-Never allow the AI to invent its own naming system. Define names in your prompt.
+3. Hedging Strategies Section
+Below the inputs, create two distinct blocks for calculating the hedges. Provide the Excel formulas required to calculate each step based on the inputs above.
 
-### 4. Specify Formatting Explicitly
+Block 1: Forward Hedge
 
-Color codes, sections, layout — be explicit.
+Row Label: [a] Sell EUR/USD 1-Year Forward
 
-### 5. Include Context Files from GitHub
+Calculation: Multiply the 1-Year Receivable by the 1-Year Forward Exchange Rate.
 
-This is the most efficient way to use AI for models.
+Formatting: Yellow background (Outcome). Add the text <-- LOCKED IN: in one year we will have this amount to the right of the result.
+
+Target Result: $18,589,035.27
+
+Block 2: Money Market Hedge
+Provide the three distinct steps required to execute this hedge.
+
+Step [a] Borrow the discounted present value of the foreign receivable: Divide the 1-Year Receivable by (1 + E.U. 1-Year Interest Rate). Format as Blue text. Target Result: €16,394,455.65.
+
+Step [b] Convert [a] into domestic at the current spot exchange: Multiply the result of Step [a] by the Current EUR/USD Spot Exchange Rate. Format as Blue text. Target Result: $19,288,077.
+
+Step [c] Invest [b] at the prevailing domestic interest rate: Multiply the result of Step [b] by (1 + U.S. 1-Year Interest Rate). Format as Yellow background (Outcome). Add the text <-- LOCKED IN: in one year we will have this amount to the right of the result. Target Result: $19,995,950.
+
+4. Sensitivity Table / Scenario Analysis
+Create a large data table at the bottom of the spreadsheet to analyze how different future spot prices impact the strategies. Provide the exact logic/formulas for each column.
+
+Row Setup (Future Spot Price):
+Create a column starting at $1.12 and ending at $1.24, moving in increments of $0.01. Add side notes outside the table: point to $1.12 with <-- Worse (EUR depreciates), $1.18 with <-- Baseline, and $1.24 with <-- Better (EUR appreciates).
+
+Column Headers & Logic:
+
+In one year, we receive - 0. No Hedge: Multiply the Future Spot Price in that row by the original 1-Year Receivable (€16,999,575.01).
+
+In one year, we receive - 1. Forward Hedge: Absolute reference to the Forward Hedge Outcome ($18,589,035). This number is static all the way down.
+
+In one year, we receive - 2. Money Market Hedge: Absolute reference to the Money Market Hedge Outcome ($19,995,950). This number is static all the way down.
+
+Hedge Profit (Loss) vs. No Hedge - 1. Forward Hedge: Subtract the "0. No Hedge" value from the "1. Forward Hedge" value for that row. Format as Blue text.
+
+Hedge Profit (Loss) vs. No Hedge - 2. Money Market Hedge: Subtract the "0. No Hedge" value from the "2. Money Market Hedge" value for that row. Format as Blue text.
+
+Winner - of Hedge / No Hedge: Write an IF statement that compares the three "In one year, we receive" columns. It should output the text name of the column that yields the highest value (e.g., "0. No Hedge", "1. Forward Hedge", or "2. Money Market Hedge"). Format as Blue text.
+
+Winner - of Hedges: Write an IF statement comparing only the Forward Hedge vs. Money Market Hedge columns. It should output the text name of the winning hedge. Format as Blue text.
+
+Please generate the complete guide so a user can build this from scratch.
 
 **Options for providing context:**
 1. **Best:** GitHub links to your spec and template files
